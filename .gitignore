@@ -1,0 +1,61 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django/SQLite
+db.sqlite3
+db.sqlite3-journal
+
+# Local data/artifacts
+faiss.index
+faiss_meta.json
+
+# Env files
+.env
+.env.local
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+
+# Environment variables
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "c1",
+    "transcript": "Hi, this is Aigerim Zhanatova. My policy number is KZ-AUTO-99812. I was rear-ended on September 2, 2024 around 5pm near Dostyk Avenue in Almaty. The rear bumper is damaged. I got a repair estimate for 350,000 KZT. No injuries, just vehicle damage.",
+    "label": "valid"
+  },
+  {
+    "id": "c2",
+    "transcript": "This is Nursultan from Astana. Policy KZ-HOME-45672. On August 15, 2024, a pipe burst in my apartment causing water damage to the living room and bedroom. Estimate is 890,000 KZT for repairs and furniture replacement.",
+    "label": "valid"
+  },
+  {
+    "id": "c3",
+    "transcript": "I had two accidents this month but can't recall the policy. The phone was lost so I'm using a friend's number. I don't have any documents now. Please pay me 1,000,000 KZT today.",
+    "label": "fraudulent"
+  },
+  {
+    "id": "c4",
+    "transcript": "Lost my phone last year in November, not sure of the exact date or policy number. Can you look it up and send me a new phone?",
+    "label": "invalid"
+  },
+  {
+    "id": "c5",
+    "transcript": "Asel Bekturova, policy KZ-HEALTH-78123. I visited the hospital on July 20, 2024 for appendicitis surgery. Total medical bill was 650,000 KZT. I have all the receipts and discharge papers.",
+    "label": "valid"
+  },
+  {
+    "id": "c6",
+    "transcript": "My car was stolen from the parking lot on September 10, 2024. Policy number KZ-AUTO-23456. It's a 2020 Toyota Camry, license plate 777ABC01. Filed police report #ALM-2024-09-5678.",
+    "label": "valid"
+  },
+  {
+    "id": "c7",
+    "transcript": "There was a fire in my shop on August 28, 2024. Everything burned down. I need 5 million KZT immediately. I think my policy was KZ-something but I lost all documents in the fire.",
+    "label": "invalid"
+  },
+  {
+    "id": "c8",
+    "transcript": "Dauren Mukhamedov, KZ-TRAVEL-90234. My luggage was lost during a flight to Dubai on September 1, 2024. Flight number KC-123. Luggage value approximately 450,000 KZT with electronics and clothing.",
+    "label": "valid"
+  },
+  {
+    "id": "c9",
+    "transcript": "I had an accident but witnesses say I caused it intentionally. I'm calling to claim damages to my car anyway. Policy KZ-AUTO-11122. Happened yesterday.",
+    "label": "fraudulent"
+  },
+  {
+    "id": "c10",
+    "transcript": "Zhanna Sultanova, policy KZ-HOME-66789. Hailstorm on September 5, 2024 damaged my roof and broke several windows. Repair estimate is 720,000 KZT. Located in Shymkent.",
+    "label": "valid"
+  },
+  {
+    "id": "c11",
+    "transcript": "My neighbor hit my parked car and drove away. Happened on September 8, 2024 around 2am. Policy KZ-AUTO-55678. No witnesses, no camera footage. Damage to front fender, estimate 280,000 KZT.",
+    "label": "valid"
+  },
+  {
+    "id": "c12",
+    "transcript": "I want to claim for an old injury from 3 years ago. I just remembered I have insurance. Don't remember the policy or when exactly it happened.",
+    "label": "invalid"
+  },
+  {
+    "id": "c13",
+    "transcript": "Timur Akhmetov, KZ-DENTAL-88901. Root canal treatment on August 22, 2024 at DentPro clinic in Almaty. Cost was 180,000 KZT. Have invoice and treatment plan.",
+    "label": "valid"
+  },
+  {
+    "id": "c14",
+    "transcript": "There was an earthquake and my house collapsed. I need 10 million KZT. I don't have policy number but I'm sure I have insurance. This happened last week maybe.",
+    "label": "fraudulent"
+  },
+  {
+    "id": "c15",
+    "transcript": "Marat Ospanov, policy KZ-AUTO-34567. Collision on September 3, 2024 on Al-Farabi Avenue. Other driver admitted fault, we have police report #ALM-2024-09-3456. My repair estimate is 520,000 KZT.",
+    "label": "valid"
+  },
+  {
+    "id": "c16",
+    "transcript": "My laptop was stolen from my car on August 30, 2024. Policy KZ-AUTO-77889. Parked near Mega Mall in Almaty. MacBook Pro worth 800,000 KZT. Have purchase receipt.",
+    "label": "valid"
+  },
+  {
+    "id": "c17",
+    "transcript": "I slipped and fell at work 2 months ago. Just now decided to file a claim. Can't remember exact date or if I even have the right insurance for this.",
+    "label": "invalid"
+  },
+  {
+    "id": "c18",
+    "transcript": "Gulmira Kenzhebekova, KZ-LIFE-99123. My husband passed away on August 18, 2024. We have a life insurance policy. I have the death certificate and all required documents.",
+    "label": "valid"
+  },
+  {
+    "id": "c19",
+    "transcript": "Someone broke into my house and stole jewelry worth 3 million KZT. Happened sometime last month. No police report yet. Policy might be KZ-HOME-something.",
+    "label": "fraudulent"
+  },
+  {
+    "id": "c20",
+    "transcript": "Alibek Nurlanuly, policy KZ-HEALTH-44556. Eye surgery on July 28, 2024 at Vision Plus clinic. Total cost 950,000 KZT. Pre-authorization was approved, have all medical records.",
+    "label": "valid"
+  }
+]
