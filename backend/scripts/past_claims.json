@@ -1,102 +1,102 @@
 [
   {
     "id": "c1",
-    "transcript": "Hi, this is Aigerim Zhanatova. My policy number is KZ-AUTO-99812. I was rear-ended on September 2, 2024 around 5pm near Dostyk Avenue in Almaty. The rear bumper is damaged. I got a repair estimate for 350,000 KZT. No injuries, just vehicle damage.",
+    "transcript": "Hi, this is Aigerim Zhanatova. I was rear-ended on September 2, 2024 around 5pm near Dostyk Avenue in Almaty. The rear bumper is completely damaged and the trunk won't close properly. I got a repair estimate for 350,000 KZT from the authorized service center. No injuries, just vehicle damage. My phone is 8-701-234-5678.",
     "label": "valid"
   },
   {
     "id": "c2",
-    "transcript": "This is Nursultan from Astana. Policy KZ-HOME-45672. On August 15, 2024, a pipe burst in my apartment causing water damage to the living room and bedroom. Estimate is 890,000 KZT for repairs and furniture replacement.",
+    "transcript": "This is Nursultan Akhmetov from Astana calling. On August 15, 2024, a pipe burst in my apartment causing severe water damage to the living room and bedroom. The ceiling is sagging and the floor is warped. Estimate is 890,000 KZT for repairs and furniture replacement. I have photos and the plumber's report. Contact me at 8-702-987-6543.",
     "label": "valid"
   },
   {
     "id": "c3",
-    "transcript": "I had two accidents this month but can't recall the policy. The phone was lost so I'm using a friend's number. I don't have any documents now. Please pay me 1,000,000 KZT today.",
+    "transcript": "I had two accidents this month but I can't really recall the details exactly. The phone was lost so I'm using a friend's number. I don't have any documents right now because they were all lost. Please pay me 1,000,000 KZT today urgently.",
     "label": "fraudulent"
   },
   {
     "id": "c4",
-    "transcript": "Lost my phone last year in November, not sure of the exact date or policy number. Can you look it up and send me a new phone?",
+    "transcript": "Lost my phone last year in November, not sure of the exact date. Can you look it up and send me a new phone? I think it was around the 15th or maybe the 20th, not really sure.",
     "label": "invalid"
   },
   {
     "id": "c5",
-    "transcript": "Asel Bekturova, policy KZ-HEALTH-78123. I visited the hospital on July 20, 2024 for appendicitis surgery. Total medical bill was 650,000 KZT. I have all the receipts and discharge papers.",
+    "transcript": "Asel Bekturova calling. I visited the Almaty Central Hospital on July 20, 2024 for appendicitis surgery. Total medical bill was 650,000 KZT including the surgery, medication, and 3 days hospital stay. I have all the receipts and discharge papers. You can reach me at 8-705-456-7890.",
     "label": "valid"
   },
   {
     "id": "c6",
-    "transcript": "My car was stolen from the parking lot on September 10, 2024. Policy number KZ-AUTO-23456. It's a 2020 Toyota Camry, license plate 777ABC01. Filed police report #ALM-2024-09-5678.",
+    "transcript": "My name is Timur Suleimenov. My car was stolen from the Mega Mall parking lot on September 10, 2024 around 2pm. It's a 2020 Toyota Camry, white color, license plate 777ABC01. I filed police report number ALM-2024-09-5678. The car value is approximately 8,500,000 KZT. Call me at 8-707-111-2233.",
     "label": "valid"
   },
   {
     "id": "c7",
-    "transcript": "There was a fire in my shop on August 28, 2024. Everything burned down. I need 5 million KZT immediately. I think my policy was KZ-something but I lost all documents in the fire.",
-    "label": "invalid"
+    "transcript": "I'm calling on behalf of my grandmother who doesn't speak well. She had a fall last month but we don't know the exact date. She doesn't remember much. We lost all the medical papers. Can you just approve 500,000 KZT for treatment?",
+    "label": "fraudulent"
   },
   {
     "id": "c8",
-    "transcript": "Dauren Mukhamedov, KZ-TRAVEL-90234. My luggage was lost during a flight to Dubai on September 1, 2024. Flight number KC-123. Luggage value approximately 450,000 KZT with electronics and clothing.",
+    "transcript": "Gulnara Mustafina here. My jewelry was stolen during a break-in on August 5, 2024. Three gold necklaces, two diamond rings, worth about 1,200,000 KZT total. I have the police report and original purchase receipts. Break-in happened at my home in Shymkent. Phone: 8-708-333-4455.",
     "label": "valid"
   },
   {
     "id": "c9",
-    "transcript": "I had an accident but witnesses say I caused it intentionally. I'm calling to claim damages to my car anyway. Policy KZ-AUTO-11122. Happened yesterday.",
+    "transcript": "There was a fire in my house and everything burned down. I need 15 million KZT immediately. I don't have time to provide documents. My friend told me you pay quickly.",
     "label": "fraudulent"
   },
   {
     "id": "c10",
-    "transcript": "Zhanna Sultanova, policy KZ-HOME-66789. Hailstorm on September 5, 2024 damaged my roof and broke several windows. Repair estimate is 720,000 KZT. Located in Shymkent.",
+    "transcript": "Zhanna Sultanova from Kostanay. Hailstorm on September 5, 2024 damaged my roof and broke several windows. The storm lasted about 30 minutes in the evening. Repair estimate is 720,000 KZT from the construction company. I have photos and video of the damage. Contact: 8-709-888-7766.",
     "label": "valid"
   },
   {
     "id": "c11",
-    "transcript": "My neighbor hit my parked car and drove away. Happened on September 8, 2024 around 2am. Policy KZ-AUTO-55678. No witnesses, no camera footage. Damage to front fender, estimate 280,000 KZT.",
-    "label": "valid"
-  },
-  {
-    "id": "c12",
-    "transcript": "I want to claim for an old injury from 3 years ago. I just remembered I have insurance. Don't remember the policy or when exactly it happened.",
+    "transcript": "My laptop stopped working yesterday. I think it's covered but I'm not sure. Can you replace it? It was expensive, maybe 400,000 KZT.",
     "label": "invalid"
   },
   {
-    "id": "c13",
-    "transcript": "Timur Akhmetov, KZ-DENTAL-88901. Root canal treatment on August 22, 2024 at DentPro clinic in Almaty. Cost was 180,000 KZT. Have invoice and treatment plan.",
+    "id": "c12",
+    "transcript": "Yerlan Kassymov calling. Minor car accident on September 15, 2024 at 10am on Abay Avenue in Almaty. Another driver hit my side mirror. Damage is minimal, estimate 45,000 KZT for replacement and paint. Other driver accepted fault. Phone: 8-701-222-3344.",
     "label": "valid"
   },
   {
+    "id": "c13",
+    "transcript": "I need money for medical treatment but I lost all my documents in a flood. My house was damaged too. Everything is gone. I need at least 3 million KZT urgently. Can't provide any papers.",
+    "label": "fraudulent"
+  },
+  {
     "id": "c14",
-    "transcript": "There was an earthquake and my house collapsed. I need 10 million KZT. I don't have policy number but I'm sure I have insurance. This happened last week maybe.",
+    "transcript": "There was an earthquake and my house collapsed. I need 10 million KZT. I don't remember when exactly it happened, sometime this year. I don't have anything to prove it because everything is destroyed.",
     "label": "fraudulent"
   },
   {
     "id": "c15",
-    "transcript": "Marat Ospanov, policy KZ-AUTO-34567. Collision on September 3, 2024 on Al-Farabi Avenue. Other driver admitted fault, we have police report #ALM-2024-09-3456. My repair estimate is 520,000 KZT.",
+    "transcript": "Marat Ospanov here. Collision on September 3, 2024 on Al-Farabi Avenue in Almaty at approximately 6:30pm. Other driver admitted fault and we exchanged information. Damage to front fender and headlight, estimate 290,000 KZT. I have photos and witness statements. Reach me at 8-702-555-6677.",
     "label": "valid"
   },
   {
     "id": "c16",
-    "transcript": "My laptop was stolen from my car on August 30, 2024. Policy KZ-AUTO-77889. Parked near Mega Mall in Almaty. MacBook Pro worth 800,000 KZT. Have purchase receipt.",
-    "label": "valid"
+    "transcript": "Calling about dental treatment from last month. I forgot the exact date and don't have the receipts anymore. It was expensive though, around 300,000 KZT. Can you approve it?",
+    "label": "invalid"
   },
   {
     "id": "c17",
-    "transcript": "I slipped and fell at work 2 months ago. Just now decided to file a claim. Can't remember exact date or if I even have the right insurance for this.",
+    "transcript": "I slipped and fell at work 2 months ago. Just now decided to file a claim. Can't remember the exact date or if I even have coverage for this. Hoping you can help.",
     "label": "invalid"
   },
   {
     "id": "c18",
-    "transcript": "Gulmira Kenzhebekova, KZ-LIFE-99123. My husband passed away on August 18, 2024. We have a life insurance policy. I have the death certificate and all required documents.",
+    "transcript": "Saule Zhumabekova. House fire on July 30, 2024 around 11pm in Taraz. Started in the kitchen from electrical fault. Fire department report number TRZ-2024-0892. Damage to kitchen and living room, total estimate 2,350,000 KZT. I have fire marshal's report and all documentation. Phone: 8-705-999-0011.",
     "label": "valid"
   },
   {
     "id": "c19",
-    "transcript": "Someone broke into my house and stole jewelry worth 3 million KZT. Happened sometime last month. No police report yet. Policy might be KZ-HOME-something.",
+    "transcript": "My friend told me to call. I had some kind of accident but don't remember when. Can you check your records? I need the money pretty urgently.",
     "label": "fraudulent"
   },
   {
     "id": "c20",
-    "transcript": "Alibek Nurlanuly, policy KZ-HEALTH-44556. Eye surgery on July 28, 2024 at Vision Plus clinic. Total cost 950,000 KZT. Pre-authorization was approved, have all medical records.",
+    "transcript": "Baurzhan Mynbayev calling. Bicycle accident on August 20, 2024 in Pavlodar city park. I fell and fractured my arm. Medical treatment at City Hospital, total cost 185,000 KZT. Have medical records and X-rays. Doctor's name is Dr. Kuznetsov. Contact me at 8-707-444-5566.",
     "label": "valid"
   }
 ]

@@ -41,7 +41,11 @@ class ClaimViewSet(viewsets.ModelViewSet):
     def action(self, request, pk=None):
         """Perform action on a claim (approve/deny/escalate)"""
         claim = self.get_object()
-        action_type = request.data.get("action")  # approve|deny|escalate
+        action_type = request.data.get("action")
+        
+        if action_type not in ("approve", "deny", "escalate"):
+            return Response({"detail": "Invalid action"}, status=400)
+        
         email_to = request.data.get("to", "ops@example.com")
         subject = f"Claim {claim.id} {action_type}"
         body = f"Automated action for claim {claim.id}: {action_type}\n\nExtracted: {claim.extracted}"

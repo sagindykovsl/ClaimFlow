@@ -1,53 +1,32 @@
-# Python virtual environment
-.venv/
-venv/
-env/
-
-# Python cache and artifacts
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Django/SQLite
-db.sqlite3
-db.sqlite3-journal
-
-# Local data/artifacts
-faiss.index
-faiss_meta.json
-
-# Env files
-.env
-.env.local
-
-# IDE/editor
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-# Python virtual environment
-.venv/
-venv/
-env/
-
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
 
 # Django
 *.log
-*.pot
-*.pyc
 db.sqlite3
 db.sqlite3-journal
+/media
+/static
+
+# FAISS index files
+faiss.index
+faiss_meta.json
 
 # Environment variables
 .env
 .env.local
+.env.*.local
 
 # IDEs
 .vscode/
@@ -59,3 +38,21 @@ db.sqlite3-journal
 # OS
 .DS_Store
 Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+out/
+.turbo/
+
+# Testing
+.coverage
+.pytest_cache/
+coverage/
+
+# Misc
+*.bak
+.cache/
