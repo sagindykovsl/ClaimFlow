@@ -58,9 +58,9 @@ def extract_entities(transcript: str) -> dict:
         name = name_chain.invoke({"text": transcript}).strip()
         if name and name.lower() != 'none' and len(name) < 50:
             result["claimant_name"] = name
-            print(f"  ✓ Name: {name}")
+            print(f"Name: {name}")
     except Exception as e:
-        print(f"  ✗ Name extraction error: {type(e).__name__}: {str(e)}")
+        print(f"Name extraction error: {type(e).__name__}: {str(e)}")
 
     # PROMPT CHAIN STEP 2: Extract phone number
     try:
@@ -76,11 +76,11 @@ def extract_entities(transcript: str) -> dict:
             transcript_clean = transcript.replace(" ", "").replace("-", "")
             if phone_clean in transcript_clean or phone in transcript:
                 result["contact_phone"] = phone
-                print(f"  ✓ Phone: {phone}")
+                print(f"Phone: {phone}")
             else:
-                print(f"  ⚠ Phone hallucination prevented: {phone}")
+                print(f"Phone hallucination prevented: {phone}")
     except Exception as e:
-        print(f"  ✗ Phone extraction error: {type(e).__name__}: {str(e)}")
+        print(f"Phone extraction error: {type(e).__name__}: {str(e)}")
 
     # PROMPT CHAIN STEP 3: Extract incident date
     try:
@@ -92,9 +92,9 @@ def extract_entities(transcript: str) -> dict:
         date = date_chain.invoke({"text": transcript}).strip()
         if date and date.lower() != 'none' and len(date) < 50:
             result["incident_datetime"] = date
-            print(f"  ✓ Date: {date}")
+            print(f"Date: {date}")
     except Exception as e:
-        print(f"  ✗ Date extraction error: {type(e).__name__}: {str(e)}")
+        print(f"Date extraction error: {type(e).__name__}: {str(e)}")
 
     # PROMPT CHAIN STEP 4: Extract location
     try:
@@ -106,9 +106,9 @@ def extract_entities(transcript: str) -> dict:
         location = location_chain.invoke({"text": transcript}).strip()
         if location and location.lower() != 'none' and len(location) < 50:
             result["incident_location"] = location
-            print(f"  ✓ Location: {location}")
+            print(f"Location: {location}")
     except Exception as e:
-        print(f"  ✗ Location extraction error: {type(e).__name__}: {str(e)}")
+        print(f"Location extraction error: {type(e).__name__}: {str(e)}")
 
     # PROMPT CHAIN STEP 5: Extract claimed amount
     try:
@@ -124,11 +124,11 @@ def extract_entities(transcript: str) -> dict:
             if amount_clean:
                 try:
                     result["claimed_amount"] = float(amount_clean)
-                    print(f"  ✓ Amount: {result['claimed_amount']}")
+                    print(f"Amount: {result['claimed_amount']}")
                 except ValueError:
-                    print(f"  ✗ Amount conversion failed: {amount_str}")
+                    print(f"Amount conversion failed: {amount_str}")
     except Exception as e:
-        print(f"  ✗ Amount extraction error: {type(e).__name__}: {str(e)}")
+        print(f"Amount extraction error: {type(e).__name__}: {str(e)}")
 
     # PROMPT CHAIN STEP 6: Generate description summary
     try:
@@ -140,12 +140,12 @@ def extract_entities(transcript: str) -> dict:
         description = desc_chain.invoke({"text": transcript}).strip()
         if description and len(description) > 10:
             result["incident_description"] = description
-            print(f"  ✓ Description: {description[:60]}...")
+            print(f"Description: {description[:60]}...")
         else:
             result["incident_description"] = transcript[:200]
-            print(f"  ⚠ Description fallback to transcript")
+            print("Description fallback to transcript")
     except Exception as e:
-        print(f"  ✗ Description error: {type(e).__name__}: {str(e)}")
+        print(f"Description error: {type(e).__name__}: {str(e)}")
         result["incident_description"] = transcript[:200]
 
     # Update metadata

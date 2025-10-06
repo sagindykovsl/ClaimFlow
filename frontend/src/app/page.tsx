@@ -4,14 +4,31 @@ import axios from "axios";
 
 const API = process.env.NEXT_PUBLIC_API_BASE;
 
+type Extracted = Record<string, unknown>;
+interface Classification {
+  label?: "valid" | "invalid" | "fraudulent" | string;
+  score?: number;
+  [key: string]: unknown;
+}
+interface Suggestions {
+  next_steps?: string[];
+  [key: string]: unknown;
+}
+interface SimilarItem {
+  id?: string;
+  preview?: string;
+  similarity: number;
+  label?: string;
+  [key: string]: unknown;
+}
 interface Claim {
   id: number;
   transcript: string;
-  extracted: Record<string, any>;
-  classification: Record<string, any>;
-  suggestions: Record<string, any>;
+  extracted: Extracted;
+  classification: Classification;
+  suggestions: Suggestions;
   status: string;
-  similar: Array<Record<string, any>>;
+  similar: SimilarItem[];
 }
 
 export default function Home() {
@@ -26,8 +43,9 @@ export default function Home() {
     try {
       const res = await axios.post(`${API}/claims/`, { transcript: text });
       setClaim(res.data);
-    } catch (e: any) {
-      setError(e?.message || "Failed to analyze claim");
+    } catch (e: unknown) {
+      const msg = e instanceof Error ? e.message : "Failed to analyze claim";
+      setError(msg);
     } finally {
       setLoading(false);
     }
@@ -44,8 +62,9 @@ export default function Home() {
           ? "denied"
           : "escalated";
       setClaim({ ...claim, status: newStatus });
-    } catch (e: any) {
-      setError(e?.message || "Failed to perform action");
+    } catch (e: unknown) {
+      const msg = e instanceof Error ? e.message : "Failed to perform action";
+      setError(msg);
     }
   };
 
@@ -64,7 +83,7 @@ export default function Home() {
     }
   };
 
-  const getClassificationColor = (label: string) => {
+  const getClassificationColor = (label?: string) => {
     switch (label) {
       case "valid":
         return "bg-green-500";

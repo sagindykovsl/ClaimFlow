@@ -1,5 +1,4 @@
 import faiss
-import numpy as np
 import json
 import os
 from .embeddings import embed_texts

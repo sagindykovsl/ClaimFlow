@@ -25,5 +25,5 @@ meta = [{"id": d["id"], "label": d["label"], "preview": d["transcript"][:120]} f
 print(f"Building FAISS index from {len(texts)} past claims...")
 ok = build_index(texts, meta)
 print(f"Index built successfully: {ok}")
-print(f"Index saved to: faiss.index")
-print(f"Metadata saved to: faiss_meta.json")
+print("Index saved to: faiss.index")
+print("Metadata saved to: faiss_meta.json")
