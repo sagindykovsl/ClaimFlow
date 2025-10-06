@@ -16,24 +16,25 @@ An AI-powered insurance claim processing system that simulates voice-to-text cla
 ### Backend
 - **Django 5.2** + Django REST Framework
 - **SQLite** with JSONField for flexible claim storage
-- **HuggingFace Inference API** (Qwen2.5-7B-Instruct) for LLM processing
+- **LangChain + Transformers (local)** using `google/flan-t5-base` for extraction/classification
 - **sentence-transformers** + **FAISS** for similarity search
 - **pytest** for testing
 
 ### Frontend
-- **Next.js 14** (App Router)
-- **TypeScript** + **Tailwind CSS**
+- **Next.js 15** (App Router)
+- **TypeScript** + **Tailwind CSS v4**
 - **axios** for API communication
 
 ### DevOps
-- **GitHub Actions** CI for automated testing and linting
+- **GitHub Actions** CI for automated testing and linting (backend + frontend jobs)
 - **ruff**, **black**, **isort** for code quality
+- AI decision logging printed to server logs (visible locally and in CI)
 
 ## Prerequisites
 
 - Python 3.10+
 - Node.js 20+
-- HuggingFace API token (free tier available)
+- No HuggingFace token required (LLM runs locally via Transformers)
 
 ## Quick Start
 
@@ -57,7 +58,8 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install django djangorestframework django-cors-headers drf-spectacular \
-            pydantic python-dotenv requests sentence-transformers faiss-cpu \
+            pydantic python-dotenv transformers sentence-transformers faiss-cpu \
+            langchain langchain-huggingface \
             black isort ruff pytest pytest-django
 
 # Setup database
@@ -185,14 +187,12 @@ npm run build
 
 ### Environment Variables (.env)
 
-```bash
-# Required
-HF_TOKEN=hf_your_token_here
+LLM runs locally and does not require API keys. Optional variables:
 
-# Optional (with defaults)
+```bash
+# FAISS index paths (optional)
 FAISS_INDEX_PATH=faiss.index
 FAISS_META_PATH=faiss_meta.json
-DJANGO_DEBUG=1
 ```
 
 ### Frontend Environment (.env.local)
@@ -230,13 +230,13 @@ python scripts/build_faiss.py
 
 1. **Database**: For production, migrate from SQLite to PostgreSQL
 2. **CORS**: Update `CORS_ALLOW_ALL_ORIGINS` to specific domains
-3. **HF Token**: Use environment variables, never commit secrets
-4. **Static Files**: Run `python manage.py collectstatic` for Django admin
-5. **Frontend**: Build with `npm run build` and serve via CDN or SSR
+3. **Static Files**: Run `python manage.py collectstatic` for Django admin
+4. **Frontend**: Build with `npm run build` and serve via CDN or SSR
+5. **CI**: `.github/workflows/ci.yml` builds backend/frontend, runs lint and tests
 
 ## Architecture Highlights
 
-- **Separation of Concerns**: LLM logic isolated in services layer
+- **Separation of Concerns**: LLM logic isolated in services layer (`claims/services/llm.py`)
 - **JSON Storage**: Flexible schema-less claim data with SQLite JSONField
 - **Mock Services**: Email/notification system stubbed for demo
 - **Fallback Handling**: Graceful degradation if LLM fails or returns invalid JSON
