@@ -27,6 +27,8 @@ jobs:
           pip install --upgrade pip
           pip install django djangorestframework django-cors-headers drf-spectacular
           pip install pydantic python-dotenv requests
+          # LLM + LangChain stack used by claims/services/llm.py
+          pip install transformers langchain langchain-huggingface
           pip install sentence-transformers faiss-cpu
           pip install black isort ruff pytest pytest-django
 
